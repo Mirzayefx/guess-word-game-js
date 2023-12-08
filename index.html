@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="box">
+        <div class="box_child">
+            <h1>Guess the Word</h1>
+            <div class="box_child_circle">
+            </div>
+            <div class="box_child_active">  
+            <span class="hint_handler"></span>
+            <span class="wrong_letters"></span>
+            <span class="limit_"></span>
+            <input oninput="inpFunc(event)" type="text" placeholder="Guess the word" maxlength="1">
+            <button class="reset_btn">Reset Game</button>
+        </div>
+        </div>
+    </div>
+
+    <script src="./js/words.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
